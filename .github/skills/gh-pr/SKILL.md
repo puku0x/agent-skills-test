@@ -25,7 +25,6 @@ The PR title follows this format:
 - `<type>` and `[optional scope]` follow the same format as commit messages
 - `<description>` must be written in Japanese
 - `<description>` must end with a noun
-- Enclose file names with extension (i.e., `README.md` `settings.json` ) in the `<description>` field with backticks (`).
 
 ## PR Description Template
 
@@ -86,7 +85,8 @@ Prettierの設定ファイルを追加しました。
 - #123"
 ```
 
-- `cat` コマンドを使用して、複数行の PR 説明を渡すことができます。
+- Enclose file names with extension (i.e., `*.md` `*.json` ) in the `<description>` field with backticks.
+- Backticks must be escaped in the command line to avoid shell interpretation issues. **Important**
 
 ## References
 
