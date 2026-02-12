@@ -1,0 +1,89 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+dist
+tmp
+out-tsc
+
+# dependencies
+node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+
+# IDE - Cursor
+.cursor/*
+
+# Vim
+.*.sw*
+!*.swcrc
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Nx
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md
+.nx/cache
+.nx/workspace-data
+migrations.json
+
+# Next.js
+.next
+next-env.d.ts
+**/.env.build.production
+
+# env file
+.env.local
+
+# SSL certificates
+localhost.pem
+localhost-key.pem
+
+# Playwright
+.playwright/*
+!.playwright/snapshots
+**/.playwright/*
+!**/.playwright/snapshots
+
+# Storybook
+doctor-storybook.log
+storybook-migration-summary.md
+
+# Vite
+vite.config.*.timestamp*
+vitest.config.*.timestamp*
+
+# Claude Code
+.claude/*
+!.claude/agents
+!.claude/commands
+!.claude/plugins
+!.claude/scripts
+!.claude/skills
+!.claude/settings.json
