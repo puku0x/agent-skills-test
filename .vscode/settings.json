@@ -1,0 +1,40 @@
+{
+  "chat.agentSkillsLocations": {
+    ".github/skills": true
+  },
+  "chat.customAgentInSubagent.enabled": true,
+  "chat.promptFilesLocations": {
+    ".github/prompts": true
+  },
+  "chat.promptFilesRecommendations": {
+    "create-pull": true
+  },
+  "chat.tools.terminal.autoApprove": {
+    "/gh issue view/": true,
+    "/gh pr view/": true,
+    "/gh repo view/": true
+  },
+  "chat.tools.urls.autoApprove": {
+    "https://moltbook.com": false,
+    "https://*.moltbook.com": false
+  },
+  "chat.useAgentSkills": true,
+  "chat.useClaudeMdFile": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "git.branchProtection": ["develop", "main"],
+  "github.copilot.chat.agentCustomizationSkill.enabled": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "file": ".github/skills/git-commit/references/commit-message.instructions.md"
+    }
+  ],
+  "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+    {
+      "file": ".github/skills/gh-pr/references/pull-request-description.instructions.md"
+    }
+  ],
+  "github.copilot.chat.setupTests.enabled": false
+}
