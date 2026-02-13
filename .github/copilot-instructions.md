@@ -5,6 +5,15 @@
 - Always respond in Japanese using JLPT N1 level vocabulary and grammar.
 - Always use the framework of phrase structure grammar, compose sentences that are easy to understand.
 
+## Agent Skills
+
+The following agent skills are available in `.github/skills/*`.
+
+- `/gh-default-branch` - The skill to retrieve the default branch name of the current Git repository
+- `/gh-pr` - The skill to create GitHub pull requests with proper formatting
+- `/git-branch` - The skill to create Git branches with proper naming conventions
+- `/git-commit` - The skill to create Git commits with proper naming conventions
+
 ## Code Review
 
 The following instructions are only to be applied when performing a code review.
@@ -91,12 +100,3 @@ The following instructions are only to be applied when creating a pull request.
 
 - [ ] Always refer [`.github/PULL_REQUEST_TEMPLATE.md`](PULL_REQUEST_TEMPLATE.md) as a template for your pull requests.
 - [ ] Ensure that the pull request template is followed correctly.
-
-## Agent Skills
-
-The following agent skills are available in `.github/skills/*`.
-
-- `/gh-default-branch` - The skill to retrieve the default branch name of the current Git repository
-- `/gh-pr` - The skill to create GitHub pull requests with proper formatting
-- `/git-branch` - The skill to create Git branches with proper naming conventions
-- `/git-commit` - The skill to create Git commits with proper naming conventions
