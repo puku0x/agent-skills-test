@@ -1,6 +1,6 @@
 ---
 name: git-commit
-description: This skill should be used when creating Git commit messages that follow Conventional Commits format. Use this skill after code changes are completed and before committing to the repository. The skill provides project-specific commit message conventions, type selection rules, scope determination based on directory structure, and quality checks to ensure commits follow the project's standards.
+description: Create Git commit messages following Conventional Commits format with automatic type and scope detection. Use when asked to "commit changes", "create a commit", "write commit message", or when ready to commit staged code. Supports feat, fix, docs, refactor, test, build, ci, chore, and revert types with project-specific scope determination based on file paths and directory structure.
 ---
 
 # Git Commit Skill
