@@ -16,7 +16,7 @@ Use this skill when:
 - The user requests the default branch name of the repository.
 - Performing git operations that require knowledge of the default branch (e.g., creating pull requests, comparing branches, checking out the base branch).
 
-## Usage
+## Instructions
 
 To get the default branch name, run the command:
 

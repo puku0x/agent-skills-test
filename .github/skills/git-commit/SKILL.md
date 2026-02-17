@@ -26,11 +26,11 @@ The commit message must follow this format:
 [optional footer(s)]
 ```
 
-## Workflow overview
+## Instructions
 
 1. Check the staged files using `git diff --staged --name-only`.
    Ask user to stage changes if there are no staged files.
-2. Determine the appropriate commit type and scope based on the staged files.
+2. Determine the appropriate commit type based on the staged files.
 
 **type** must be selected from the following options:
 
@@ -45,37 +45,37 @@ The commit message must follow this format:
 - `chore`: Other changes (e.g., changes to `*.json`, `*.config.mjs`, `*.config.cjs`, `*.config.js`, `*.config.ts`, `.gitignore`, `.gitattributes`, `.prettierignore`, `.prettier`)
 - `revert`: Reverting a previous commit
 
+3. Determine the appropriate scope based on the staged files and the project structure.
+
 **scope** should be determined based on the directory structure of the staged files. For example:
 
 - If staged files are in `.claude/` or `.mcp.json`, use `claude`
 - If staged files are in `.github/`, use `github`
 - If staged files are in `.vscode/`, use `vscode`
 - If staged files are in `apps/frontend/`, use `frontend`
+- If staged files are in `libs/frontend/feature-xxx`, use `frontend-feature-xxx`
+- If staged files are in `libs/utils/`, use `utils`
 - If staged files are in the root directory, do not set a scope
 
-3. Craft a concise and descriptive commit message in English that adheres to the Conventional Commits format.
+4. Craft a comprehensive and descriptive commit message strictly following the Conventional Commits format.
 
 Example:
 
 ```bash
-git commit -m "$(cat <<'EOF'
-feat(utils): update xxx function
+git commit -m "feat(utils): update xxx function
 
 - Add xxx logic in xxx function
 - Implement unit tests for xxx function
 
-Co-Authored-By: Copilot <175728472+Copilot@users.noreply.github.com>
-EOF
-)"
+Co-Authored-By: Copilot <175728472+Copilot@users.noreply.github.com>"
 ```
-
-Never use `\n` in the commit message. Use actual new lines.
 
 ## Notes
 
-- Commit messages must be written in English. **Important**
+- **Important** Commit messages must be written in English.
+- **Important** Commit messages must be multi-lines.
 - If there are staged changes, determine the commit message based only on the staged changes.
-- The commit message must clearly indicate that it was created with Copilot.
+- Always include `Co-Authored-By` information. The commit message must clearly indicate that it was created with Copilot.
 
 ## References
 
