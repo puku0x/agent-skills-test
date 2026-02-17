@@ -22,7 +22,7 @@ Use this skill when:
 Push the current branch to the remote repository:
 
 ```bash
-git push -u origin $(git rev-parse --abbrev-ref HEAD)
+git push -u origin $(git branch --show-current)
 ```
 
 ### Step 2: Create a pull request

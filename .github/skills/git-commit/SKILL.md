@@ -59,6 +59,8 @@ The commit message must follow this format:
 
 4. Craft a comprehensive and descriptive commit message strictly following the Conventional Commits format.
 
+**Important** NEVER include `\n` in the commit message. Always use actual newlines to separate the subject, body, and footer.
+
 Example:
 
 ```bash
@@ -73,7 +75,6 @@ Co-Authored-By: Copilot <175728472+Copilot@users.noreply.github.com>"
 ## Notes
 
 - **Important** Commit messages must be written in English.
-- **Important** Commit messages must be multi-lines.
 - If there are staged changes, determine the commit message based only on the staged changes.
 - Always include `Co-Authored-By` information. The commit message must clearly indicate that it was created with Copilot.
 
