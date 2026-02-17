@@ -69,6 +69,10 @@ Example:
 git switch -c feat-user-authentication
 ```
 
+> [!NOTE]
+>
+> When the name of the branch already exists, append a unique suffix to the branch name to avoid conflicts. For example, if `feat-user-authentication` already exists, create `feat-user-authentication-1`, `feat-user-authentication-2`, etc.
+
 ## References
 
 - [branch-name.md](./references/branch-name.md)
