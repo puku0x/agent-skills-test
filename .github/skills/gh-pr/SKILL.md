@@ -15,7 +15,25 @@ Use this skill when:
 - Ready to create a pull request for review
 - Need to push branch to remote and open PR
 
-## PR format
+## Instructions
+
+### Step 1: Push to remote
+
+Push the current branch to the remote repository:
+
+```bash
+git push -u origin $(git rev-parse --abbrev-ref HEAD)
+```
+
+### Step 2: Create a pull request
+
+Create a pull request using the GitHub CLI:
+
+```bash
+gh pr create --title "<PR title>" --body "<PR description>"
+```
+
+#### Format of PR title
 
 The PR title follows this format:
 
@@ -27,7 +45,7 @@ The PR title follows this format:
 - `<description>` must be written in Japanese
 - `<description>` must end with a noun
 
-## PR Description Template
+#### Format of PR description
 
 The PR description should be written in Japanese and follow this template:
 
@@ -36,8 +54,8 @@ The PR description should be written in Japanese and follow this template:
 
 <!-- （修正の内容など） -->
 
-- [ ] 変更内容1
-- [ ] 変更内容2
+- [ ] 変更内容 1
+- [ ] 変更内容 2
 - [ ] 不具合修正の内容
 
 ## 備考
@@ -47,47 +65,28 @@ The PR description should be written in Japanese and follow this template:
 - #123
 ```
 
-## Workflow
-
-### Step 1: Push to remote
-
-Push the current branch to the remote repository:
+#### Example
 
 ```bash
-git status
-```
+gh pr create --title "docs(github): カスタムインストラクションの追加" --body "## 概要
 
-```bash
-git push -u origin <branch-name>
-```
-
-### Step 2: Create a pull request
-
-Create a pull request using the GitHub CLI:
-
-```bash
-gh pr create --title "<PR title>" --body "<PR description>"
-```
-
-Example:
-
-```bash
-gh pr create --title "chore: Prettier設定ファイルの追加" --body "## 概要
-
-Prettierの設定ファイルを追加しました。
+GitHub Copilot 用のカスタムインストラクションを追加しました。
 
 ### 変更内容
 
-- [x] \`.prettierignore\` の追加
-- [x] \`.prettierrc\` の追加
+- [x] `.github/custom-instructions.md` の追加
+- [x] `.github/instructions/*.md` の追加
 
 ## 備考
 
 - #123"
 ```
 
+## Notes
+
+- **Important** The `type` and `scope` in the PR title must be written in English while the `description` must be written in Japanese. (e.g., `feat(frontend): 〜の追加`)
 - Enclose file names with extension (i.e., `*.md` `*.json` ) in the `<description>` field with backticks.
-- Backticks must be escaped in the command line to avoid shell interpretation issues. **Important**
+  - Backticks must be escaped in the command line to avoid shell interpretation issues on GitHub Copilot.
 
 ## References
 

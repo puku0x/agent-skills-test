@@ -14,7 +14,7 @@ Use this skill when:
 - You have made changes to the codebase and need to create a new branch for those changes.
 - You want to ensure that the branch name follows the project's naming conventions.
 
-## Workflow
+## Instructions
 
 ### Step 1: Check staged changes
 
@@ -24,10 +24,12 @@ Use the following command to view staged changes:
 git diff --staged
 ```
 
+**Important** If there are staged changes, proceed to the next step.
+
 If there are no staged changes, check unstaged changes with:
 
 ```bash
-git diff
+git diff --name-only
 ```
 
 ### Step 2: Determine branch type and description
