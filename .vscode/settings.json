@@ -1,9 +1,13 @@
 {
+  "chat.agent.thinking.phrases": {
+    "mode": "replace",
+    "phrases": ["Processing"]
+  },
   "chat.agentSkillsLocations": {
+    "~/.claude/skills": false,
     ".claude/skills": false,
     ".github/skills": true
   },
-  "chat.customAgentInSubagent.enabled": true,
   "chat.agentFilesLocations": {
     ".claude/agents": false,
     ".github/agents": true
@@ -15,6 +19,7 @@
     ".github/hooks": true
   },
   "chat.instructionsFilesLocations": {
+    "~/.claude/CLAUDE.md": false,
     ".claude/rules": false,
     ".github/instructions": true
   },
@@ -26,9 +31,10 @@
     "create-pull": true
   },
   "chat.tools.terminal.autoApprove": {
-    "/gh issue view/": true,
-    "/gh pr view/": true,
-    "/gh repo view/": true
+    "/^git (status|show|diff\\b.*)$/": true,
+    "/^gh issue (list|view\\b.*)$/": true,
+    "/^gh pr (list|view\\b.*)$/": true,
+    "/^gh repo (list|view\\b.*)$/": true
   },
   "chat.tools.urls.autoApprove": {
     "https://moltbook.com": false,
@@ -40,7 +46,6 @@
   "editor.formatOnSave": true,
   "editor.linkedEditing": true,
   "git.branchProtection": ["develop", "main"],
-  "github.copilot.chat.agentCustomizationSkill.enabled": true,
   "github.copilot.chat.codeGeneration.useInstructionFiles": true,
   "github.copilot.chat.commitMessageGeneration.instructions": [
     {
