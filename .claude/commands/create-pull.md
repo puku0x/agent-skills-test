@@ -20,7 +20,7 @@ Read @.github/prompts/create-pull.prompt.md
 - コミットメッセージには、プルリクエストが Claude Code によって作成されてことを必ず明記する
 
 ```
-feat(echo-feature-xxx): update xxx function
+feat(frontend-feature-xxx): update xxx function
 
 🤖 Generated with [Claude Code](https://claude.ai/code)
 
